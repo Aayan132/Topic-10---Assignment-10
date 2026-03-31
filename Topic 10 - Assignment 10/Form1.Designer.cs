@@ -28,92 +28,152 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnCPU = new System.Windows.Forms.Button();
+            this.btnRAM = new System.Windows.Forms.Button();
+            this.btnSSD = new System.Windows.Forms.Button();
+            this.btnPSU = new System.Windows.Forms.Button();
+            this.btnInput = new System.Windows.Forms.Button();
+            this.btnOutput = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ImgComponents = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.lblInfo = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgComponents)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnCPU
             // 
-            this.button1.Location = new System.Drawing.Point(9, 53);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 78);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCPU.Location = new System.Drawing.Point(9, 66);
+            this.btnCPU.Name = "btnCPU";
+            this.btnCPU.Size = new System.Drawing.Size(121, 72);
+            this.btnCPU.TabIndex = 0;
+            this.btnCPU.Text = "CPU";
+            this.btnCPU.UseVisualStyleBackColor = true;
+            this.btnCPU.Click += new System.EventHandler(this.btnCPU_Click);
             // 
-            // button2
+            // btnRAM
             // 
-            this.button2.Location = new System.Drawing.Point(9, 137);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(124, 78);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnRAM.Location = new System.Drawing.Point(9, 158);
+            this.btnRAM.Name = "btnRAM";
+            this.btnRAM.Size = new System.Drawing.Size(121, 77);
+            this.btnRAM.TabIndex = 1;
+            this.btnRAM.Text = "RAM";
+            this.btnRAM.UseVisualStyleBackColor = true;
+            this.btnRAM.Click += new System.EventHandler(this.btnRAM_Click);
             // 
-            // button3
+            // btnSSD
             // 
-            this.button3.Location = new System.Drawing.Point(11, 221);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(122, 78);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnSSD.Location = new System.Drawing.Point(9, 255);
+            this.btnSSD.Name = "btnSSD";
+            this.btnSSD.Size = new System.Drawing.Size(121, 72);
+            this.btnSSD.TabIndex = 2;
+            this.btnSSD.Text = "SSD";
+            this.btnSSD.UseVisualStyleBackColor = true;
+            this.btnSSD.Click += new System.EventHandler(this.btnSSD_Click);
             // 
-            // button4
+            // btnPSU
             // 
-            this.button4.Location = new System.Drawing.Point(12, 305);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(121, 78);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnPSU.Location = new System.Drawing.Point(9, 347);
+            this.btnPSU.Name = "btnPSU";
+            this.btnPSU.Size = new System.Drawing.Size(121, 75);
+            this.btnPSU.TabIndex = 3;
+            this.btnPSU.Text = "PSU";
+            this.btnPSU.UseVisualStyleBackColor = true;
+            this.btnPSU.Click += new System.EventHandler(this.btnPSU_Click);
             // 
-            // button5
+            // btnInput
             // 
-            this.button5.Location = new System.Drawing.Point(12, 389);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(123, 78);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnInput.Location = new System.Drawing.Point(9, 442);
+            this.btnInput.Name = "btnInput";
+            this.btnInput.Size = new System.Drawing.Size(121, 74);
+            this.btnInput.TabIndex = 4;
+            this.btnInput.Text = "Input Peripheral";
+            this.btnInput.UseVisualStyleBackColor = true;
+            this.btnInput.Click += new System.EventHandler(this.btnInput_Click);
             // 
-            // button6
+            // btnOutput
             // 
-            this.button6.Location = new System.Drawing.Point(12, 473);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(126, 78);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnOutput.Location = new System.Drawing.Point(9, 536);
+            this.btnOutput.Name = "btnOutput";
+            this.btnOutput.Size = new System.Drawing.Size(121, 78);
+            this.btnOutput.TabIndex = 5;
+            this.btnOutput.Text = "Output Peripheral";
+            this.btnOutput.UseVisualStyleBackColor = true;
+            this.btnOutput.Click += new System.EventHandler(this.btnOutput_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(427, 26);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Select A Component To Learn More.";
+            // 
+            // ImgComponents
+            // 
+            this.ImgComponents.Location = new System.Drawing.Point(208, 67);
+            this.ImgComponents.Name = "ImgComponents";
+            this.ImgComponents.Size = new System.Drawing.Size(439, 271);
+            this.ImgComponents.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ImgComponents.TabIndex = 8;
+            this.ImgComponents.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(892, 53);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(14, 50);
+            this.pictureBox3.TabIndex = 9;
+            this.pictureBox3.TabStop = false;
+            // 
+            // lblInfo
+            // 
+            this.lblInfo.AutoSize = true;
+            this.lblInfo.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfo.Location = new System.Drawing.Point(193, 366);
+            this.lblInfo.Name = "lblInfo";
+            this.lblInfo.Size = new System.Drawing.Size(0, 26);
+            this.lblInfo.TabIndex = 19;
             // 
             // FormAddResource
             // 
-            this.ClientSize = new System.Drawing.Size(669, 563);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(812, 622);
+            this.Controls.Add(this.lblInfo);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.ImgComponents);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnOutput);
+            this.Controls.Add(this.btnInput);
+            this.Controls.Add(this.btnPSU);
+            this.Controls.Add(this.btnSSD);
+            this.Controls.Add(this.btnRAM);
+            this.Controls.Add(this.btnCPU);
             this.Name = "FormAddResource";
+            this.Text = "Component Information";
+            ((System.ComponentModel.ISupportInitialize)(this.ImgComponents)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox imgmario;
-        private System.Windows.Forms.PictureBox imgSleepPills;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+
+        private System.Windows.Forms.Button btnCPU;
+        private System.Windows.Forms.Button btnRAM;
+        private System.Windows.Forms.Button btnSSD;
+        private System.Windows.Forms.Button btnPSU;
+        private System.Windows.Forms.Button btnInput;
+        private System.Windows.Forms.Button btnOutput;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox ImgComponents;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label lblInfo;
     }
 }
 
