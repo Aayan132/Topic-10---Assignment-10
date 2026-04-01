@@ -33,27 +33,25 @@ namespace Topic_10___Assignment_10
         private void btnPSU_Click(object sender, EventArgs e)
         {
             ImgComponents.Image = Properties.Resources.PowerSupply;
-            lblInfo.Text = "";
+            lblInfo.Text = "A Power Supply Unit (PSU) converts high-voltage \r\nalternating current (AC) from a wall outlet into \r\nlow-voltage direct current (DC) needed for \r\ncomputer components to operate.\r\n";
         }
 
         private void btnInput_Click(object sender, EventArgs e)
         {
             ImgComponents.Image = Properties.Resources.Input;
-            lblInfo.Text = "";
+            lblInfo.Text = "An input peripheral device is external hardware \r\nused to send data, signals, and instructions to a \r\ncomputer, allowing users to interact with and \r\ncontrol the system.\r\n";
         }
 
         private void btnOutput_Click(object sender, EventArgs e)
         {
             ImgComponents.Image = Properties.Resources.Output;
-            lblInfo.Text = "";
+            lblInfo.Text = "An output peripheral device receives processed data \r\nfrom a computer and presents it in a \r\nhuman-understandable form, such as text, graphics, \r\nor audio.\r\n.";
         }
 
         private void btnCPU_Click(object sender, EventArgs e)
         {
             ImgComponents.Image = Properties.Resources.CPU;
-            lblInfo.Text = "";
+            lblInfo.Text = "A CPU (Central Processing Unit) is the \"brain\" of a \r\ncomputer, responsible for fetching, decoding, and \r\nexecuting instructions to process data and manage\r\n system components.\r\n";
         }
-
-
     }
 }

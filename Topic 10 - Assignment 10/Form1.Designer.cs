@@ -135,8 +135,9 @@
             this.lblInfo.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInfo.Location = new System.Drawing.Point(193, 366);
             this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(0, 26);
+            this.lblInfo.Size = new System.Drawing.Size(12, 26);
             this.lblInfo.TabIndex = 19;
+            this.lblInfo.Text = "\r\n";
             // 
             // FormAddResource
             // 
